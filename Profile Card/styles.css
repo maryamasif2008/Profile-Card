@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8; /* Light grey background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: none;
+    box-shadow: 0  0 8px 5px #3a0a0a;
+    transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-header {
+    background-color: #6e041f; /* Sky Blue background */
+    /* padding: 1px; */
+    height: 160px;
+    text-align: center;
+}
+
+.profile-image img {
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #6e041f; /* White border around the image */
+    object-fit: cover;
+}
+
+.profile-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.profile-body h2 {
+    font-size: 28px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    color: #6e041f;
+    animation: bounceIn 3s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.profile-body .job-title {
+    font-size: 16px;
+    color: #413f3f;
+    margin-bottom: 15px;
+}
+
+.profile-body .description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: #6e041f;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
